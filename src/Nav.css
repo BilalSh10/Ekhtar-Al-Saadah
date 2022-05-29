@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@1,700&display=swap');
+
+.header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    gap: 1px;
+    align-items: center;
+    min-height: 14vh;
+    /* background: linear-gradient(to top, #538d22, #3f6516); */
+    /* background-color: #273234; */
+      background-color: #111e1f;
+
+}
+
+.title {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gentium Book Basic', serif;
+    text-align: center;
+    font-size: x-large;
+    -webkit-text-stroke: 0.5px #143601;
+    text-shadow: 2px 2px rgb(1, 1, 1);
+    height: 56px;
+    margin-top: -36px;
+}
+
+.nav-links {
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap;
+    padding-left: 0px;    
+    flex-direction: row;
+    justify-content:space-evenly;
+    list-style: none;
+    align-items: center;
+    /* border-top: 1px solid white; */
+    /* border-bottom: 1px solid white; */
+    line-height: 28px;
+    margin: 0px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    font-size: medium;
+}
+
+.home-nav {
+    width: 49.58px;
+}
+
+.event-nav {
+    width: 52.24px;
+}
+
+.pevent-nav {
+    width: 87.45px;
+}
+
+.art-nav {
+    width: 58.84px;
+}
+
+.about-nav {
+    width: 50.31px;
+}
+
+.donate-nav {
+    width: 58.81px;
+}
+
+.contact-nav {
+    width: 85.69px;
+}
+
+.nav-block:hover {
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    /* background-color: #d5f5b2; */
+    /* background-color: #f7d8d6; */
+
+    /* color: #3f6516; */
+    /* border-radius: 5px; */
+    /* border-bottom: 2px solid #d0cece; */
+    border-bottom: 2px solid blue;
+}

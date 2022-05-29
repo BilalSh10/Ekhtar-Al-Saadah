@@ -1,0 +1,81 @@
+.nav-b{
+  /* background-color: #3f6516;
+   */
+  background: linear-gradient(to bottom,#3f6516, #538d22);
+  position: fixed;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+/* h1 {
+  filter: brightness(20%);
+
+} */
+
+.title{
+  color: rgb(255, 255, 255);
+  /* filter: brightness(125%); */
+  /* font-family: 'Oleo Script Swash Caps', cursive; */
+  font-family: 'Gentium Book Basic', serif;
+  /* filter: brightness(125%); */
+
+    /* font-size: 3rem; */
+  text-align: center;
+  -webkit-text-stroke: 1px #143601;
+  text-shadow: 2px 2px rgb(1, 1, 1);
+  margin-bottom: -1%;
+  /* border-radius: 5px 5px 0 0; */
+}
+
+.title-item{
+  color: #fff;
+  height: 32px;
+  margin-top: 8px;
+  padding-top: 3px;
+}
+
+.title-item:hover{
+  /* background-color: #d4e9c3; */
+  background-color: #ff3627;
+  border-radius: 4px;
+  color: #143601;
+  padding-top:  4px;
+  padding-bottom: 4px;
+}
+
+.navbar{
+  text-align: center;
+  /* line-height:1px; */
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  /* background-color: black; */
+  /* padding:0; */
+}
+
+.navbar li{
+  list-style: none;
+  display: inline-block;
+  width: fit-content;
+  height: 0px;
+}
+
+.nav-item{
+  /* background-color: black; */
+  margin-left: -20px;
+}
+
+hr {
+  margin-bottom: 9px;
+  margin-top: 8px;
+  bottom: -20px;
+  /* width: 70%; */
+  align-self: center;
+  margin-right: 15% !important;
+  margin-left: 15% !important;
+  position: relative;
+  color: #fff;
+  /* height: 12px; */
+}
