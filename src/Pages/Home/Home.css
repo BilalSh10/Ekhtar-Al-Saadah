@@ -57,10 +57,21 @@
     font-size: larger;
 }
 
-.below-heroes {
+/* .below-heroes {
     margin-bottom: 0px;
-}
+} */
 
 hr{
     width: 100%;
+    border: 1px solid rgb(0, 4, 255);
+
 }
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+  }
+
+  /* .swiper-button-prev {
+      margin-left: 20px;
+  } */

@@ -7,41 +7,29 @@
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
-  /* background-color: #fae498; */
-  /* background-color: #e0d29d; */
-  /* background: linear-gradient(to bottom, #7bd132, #509821, #7bd132); */
-  /* background-color: rgb(149, 104, 22); */
-  /* background: linear-gradient(to top, #538d22, #3f6516); */
-  /* background-color: #3b4c4e; */
-  /* background-color: #111e1f; */
   background-color: #060a0a;
   color: #d0cece;
-  /* background-color: #b3ab62; */
-
 }
 
-Nav {
-  height: 99px;
+.navbar {
+  height: 100px;
   margin-bottom: 1px;
   z-index: 1;
 }
 
-.content {
+.body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   position: relative;
   top: 100px;
   margin-top: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 48px;  
+
 }
 
-.content-container {
-  min-height: calc(100vh - 235px);
-}
-
-.footer {
+.sitefooter {
   width: 100%;
   position: relative;
   bottom: 0px;

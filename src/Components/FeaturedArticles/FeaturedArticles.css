@@ -1,0 +1,29 @@
+.FeaturedArticlesDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.FeaturedArticlesCont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: stretch;
+    width: 100%;
+    align-self: center;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.FeaturedArticleChild {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+}
+
+.FeaturedArticlesHeadline {
+    margin: 6px;
+    margin-top: 12px;
+    font-size: larger;
+}

@@ -1,39 +1,45 @@
-import "./App.css";
-import Nav from "./Nav";
-import About from "./Pages/About/About";
-import Shop from "./Shop";
-import Home from "./Pages/Home/Home";
+import './App.css';
+import NavBar from './Layout/NavBar/NavBar';
+import Footer from './Layout/Footer/Footer';
+import BackToTopButton from './Components/BackToTopButton/BackToTopButton';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import FooterV4 from "./footerv4";
-import Articles from "./Pages/Articles/Articles";
-import Events from "./Events";
-import PastEvents from "./Pages/PastEvents/PastEvents";
-import Donate from "./Pages/Donate/Donate";
-import Contact from "./Pages/Contact/Contact";
-// import DisplayEvent from "./Pages/DisplayEvent/DisplayEvent";
-import DisplayEvent from "./Pages/DisplayEvent/DisplayEvent";
-// import Articles from './Articles';
+import About from './Pages/About/About';
+import ArticlePage from './Pages/ArticlePage/ArticlePage';
+import Blog from './Pages/Blog/Blog';
+import ContactUs from './Pages/ContactUs/ContactUs';
+import Donate from './Pages/Donate/Donate';
+import EventPage from './Pages/EventPage/EventPage';
+import Events from './Pages/Events/Events';
+import Home from './Pages/Home/Home';
+import RecentEvents from './Pages/RecentEvents/RecentEvents';
+import Reviews from './Pages/Reviews/Reviews';
+import SubmitReview from './Pages/SubmitReview/SubmitReview';
+import VisitorFeedback from './Pages/VisitorFeedback/VisitorFeedback';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
-        {/* <Heroes /> */}
-        <div className="content">
+        <NavBar className="navbar" />
+        <div className="body">
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/articles" element={<Articles />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/pastevents" element={<PastEvents />} />
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/event" element={<DisplayEvent />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Blog" element={<Blog />} />
+            <Route path="/Events" element={<Events />} />
+            <Route path="/RecentEvents" element={<RecentEvents />} />
+            <Route path="/Donate" element={<Donate />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
+            <Route path="/EventPage" element={<EventPage />} />
+            <Route path="/ArticlePage" element={<ArticlePage />} />
+            <Route path="/Reviews" element={<Reviews />} />
+            <Route path="/SubmitReview" element={<SubmitReview />} />
+            <Route path="/VisitorFeedback" element={<VisitorFeedback />} />
           </Routes>
         </div>
-        <FooterV4 className='footer' />
+        <Footer className='sitefooter' />
+        <BackToTopButton />
       </div>
     </Router>
   );

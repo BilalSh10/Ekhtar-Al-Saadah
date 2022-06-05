@@ -1,0 +1,35 @@
+.EventCompCont {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: solid 1px rgb(186, 16, 16);
+    margin: 12px;
+    height: fit-content;
+    box-shadow: -0.25em 0.25rem 0.25em rgb(58, 58, 58);
+    background-color: #0a1113;
+    color: #d0cece;
+}
+
+.EventCompImgDiv {
+    flex-basis: 33%;
+    margin: 6px;
+}
+
+.EventCompSummaryDiv {
+    flex-basis: 66%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+}
+
+#eventImg {
+    width: 200px;
+    height: 200px;
+}
+
+.MoreDetailsBtnDiv {
+    height: 12px;
+    align-self: flex-end;
+}

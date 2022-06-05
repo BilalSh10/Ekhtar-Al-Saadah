@@ -42,7 +42,7 @@ p{
     border-color:rgb(186, 16, 16);
     border: 0px;
     border-radius: 4px;
-    cursor: pointer;
+
 }
 
 .containerA {
@@ -60,12 +60,12 @@ p{
 .general-info {
     padding-bottom: 16px;
 }
-
+/* 
 img {
     box-shadow: -0.25em 0.25rem 0.25em rgb(58, 58, 58);
     margin-top: 6px;
     border: solid 1px rgb(186, 16, 16);
-}
+} */
 
 #activity1 {
     width: 360px;

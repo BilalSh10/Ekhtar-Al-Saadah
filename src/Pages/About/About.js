@@ -1,6 +1,6 @@
 import "./About.css";
 import hishImg1 from "../../Images/hish.jpg";
-// import JARVIS from "../../Images/JARVIS.jpg";
+import JARVIS from "../../Images/jarvis.png";
 import activity1Img from "../../Images/temp3.jpeg";
 import activity2Img from "../../Images/activities2.png";
 import activity3Img from "../../Images/activities3.jpg";
@@ -71,7 +71,7 @@ function About() {
               </p>
           </div>
           <div className="hisham-images">
-            {/* <img src={JARVIS} alt="imgh1" id="hisham1" /> */}
+            <img src={JARVIS} alt="imgh1" id="hisham1" />
           </div>
         </div>
         <a href="#topOfPage">back to the top</a>
