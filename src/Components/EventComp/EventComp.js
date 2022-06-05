@@ -2,17 +2,16 @@ import './EventComp.css';
 import EventImg from '../../Images/activities3.jpg';
 
 
-function EventComp() {
+function EventComp(props) {
   return (
     <div class="EventCompCont">
       <div className='EventCompImgDiv'>
-            <img src={EventImg} id='eventImg' alt='event-img'/>
+            <img src = {props.image} id='eventImg' alt = {props.alt}/>
         </div>
         <div className='EventCompSummaryDiv'>
-            <h4 className='EventCompHeadline'>This is the headline</h4>
-            <p className='EventCompIntro'>Here we can have a short intro of the event, such
-            as the time and date of the event, 1-line general summary, where it's going
-            to be held. this is a paragraph.</p>
+            <h4 className='EventCompHeadline'>title: {props.title}</h4>
+            <p className='EventCompIntro'>description: {props.description}</p>
+            <h3>city: {props.city}</h3>
             <div className='MoreDetailsBtnDiv'>
             </div>
         </div>
