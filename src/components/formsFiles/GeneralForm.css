@@ -1,0 +1,64 @@
+.head {
+    /* margin: 0px;
+    margin-left: -38px; */
+    /* padding-left: 24px; */
+    margin: 0px;
+    margin-left: 12px;
+    text-align: start;
+    width: 100%;
+
+}
+
+.donate-form {
+    padding: 0px;
+    padding-left: 28px;
+    /* padding-bottom: 48px; */
+    margin-left: 16px;
+}
+
+.para {
+    text-align: start;
+    margin-bottom: 24px;
+}
+
+.form {
+    text-align: start;
+    padding-left: 16px;
+}
+
+.form-field {
+    position: absolute;
+    left: 25%;
+    line-height: 24px;
+    border: 1px solid black;
+}
+
+.desc {
+    width: 350px;
+    /* height: 75px; */
+}
+
+.mail {
+    width: 350px;
+}
+
+.des {
+    /* padding-bottom: 48px; */
+    margin-bottom: 2rem;
+}
+
+.btn{
+    margin-top: 5.1rem;
+    padding: 8px;
+    padding-right: 48px;
+    padding-left: 48px;
+    font-size: medium;
+    font-weight: bold;
+    /* background-color: #568f19db; */
+    background-color: #ff3627;
+    color:white;
+    margin-left: -20px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: black solid 1px;
+}

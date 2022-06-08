@@ -1,47 +1,54 @@
-import './App.css';
-import NavBar from './Layout/NavBar/NavBar';
-import Footer from './Layout/Footer/Footer';
-import BackToTopButton from './Components/BackToTopButton/BackToTopButton';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from './Pages/About/About';
-import ArticlePage from './Pages/ArticlePage/ArticlePage';
-import Blog from './Pages/Blog/Blog';
-import ContactUs from './Pages/ContactUs/ContactUs';
-import Donate from './Pages/Donate/Donate';
-import EventPage from './Pages/EventPage/EventPage';
-import Events from './Pages/Events/Events';
-import Home from './Pages/Home/Home';
-import RecentEvents from './Pages/RecentEvents/RecentEvents';
-import Reviews from './Pages/Reviews/Reviews';
-import SubmitReview from './Pages/SubmitReview/SubmitReview';
-import VisitorFeedback from './Pages/VisitorFeedback/VisitorFeedback';
+import { Route, Routes } from 'react-router-dom';
 
+import HomePage from './pages/visitorPages/HomePage';
+import AboutPage from './pages/visitorPages/AboutPage';
+import UpcomingEventsPage from './pages/visitorPages/UpcomingEventsPage';
+import PastEventsPage from './pages/visitorPages/PastEventsPage';
+import BlogPage from './pages/visitorPages/BlogPage';
+import DonatePage from './pages/visitorPages/DonatePage';
+import ContactUsPage from './pages/visitorPages/ContactUsPage';
+import ReviewsPage from './pages/visitorPages/ReviewsPage';
+import SubmitReviewPage from './pages/visitorPages/SubmitReviewPage';
+import LoginPage from './pages/visitorPages/LoginPage';
+import AdminHomePage from './pages/adminPages/AdminHomePage';
+import EditInfoAboutAssociationPage from './pages/adminPages/EditInfoAboutAssociationPage';
+import EditArticlesPage from './pages/adminPages/EditArticlesPage';
+import EditReviewsPage from './pages/adminPages/EditReviewsPage';
+import EditUpcomingEventsPage from './pages/adminPages/EditUpcomingEventsPage';
+import EditPastEventsPage from './pages/adminPages/EditPastEventsPage';
+import AddEventPage from './pages/adminPages/AddEventPage';
+import AddArticlePage from './pages/adminPages/AddArticlePage';
+
+import ProtectedPath from "./ProtectedPath";
+import { AdminAuthContextProvider } from "./store/authContext/AuthContext";
+
+import VisitorLayout from './components/layouts/visitorLayout/Layout';
+import AdminLayout from './components/layouts/adminLayout/Layout';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <NavBar className="navbar" />
-        <div className="body">
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Blog" element={<Blog />} />
-            <Route path="/Events" element={<Events />} />
-            <Route path="/RecentEvents" element={<RecentEvents />} />
-            <Route path="/Donate" element={<Donate />} />
-            <Route path="/ContactUs" element={<ContactUs />} />
-            <Route path="/EventPage" element={<EventPage />} />
-            <Route path="/ArticlePage" element={<ArticlePage />} />
-            <Route path="/Reviews" element={<Reviews />} />
-            <Route path="/SubmitReview" element={<SubmitReview />} />
-            <Route path="/VisitorFeedback" element={<VisitorFeedback />} />
-          </Routes>
-        </div>
-        <Footer className='sitefooter' />
-        <BackToTopButton />
-      </div>
-    </Router>
+    <AdminAuthContextProvider>  
+      <Routes>      
+        <Route path='/' exact element={<VisitorLayout><HomePage /></VisitorLayout>}/>
+        <Route path='/About' element={<VisitorLayout><AboutPage /></VisitorLayout>}/>
+        <Route path='/UpcomingEvents' element={<VisitorLayout><UpcomingEventsPage /></VisitorLayout>}/>
+        <Route path='/PastEvents' element={<VisitorLayout><PastEventsPage /></VisitorLayout>}/>
+        <Route path='/Blog' element={<VisitorLayout><BlogPage /></VisitorLayout>}/>
+        <Route path='/Donate' element={<VisitorLayout><DonatePage /></VisitorLayout>}/>
+        <Route path='/ContactUs' element={<VisitorLayout><ContactUsPage /></VisitorLayout>}/>
+        <Route path='/Reviews' element={<VisitorLayout><ReviewsPage /></VisitorLayout>}/>
+        <Route path='/SubmitReview' element={<VisitorLayout><SubmitReviewPage /></VisitorLayout>}/>
+        <Route path='/Login' element={<LoginPage />}/>
+        <Route path='/AdminHome' element={<ProtectedPath><AdminLayout><AdminHomePage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/EditAssociationInfo' element={<ProtectedPath><AdminLayout><EditInfoAboutAssociationPage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/EditArticles' element={<ProtectedPath><AdminLayout><EditArticlesPage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/EditReviews' element={<ProtectedPath><AdminLayout><EditReviewsPage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/EditUpcomingEvents' element={<ProtectedPath><AdminLayout><EditUpcomingEventsPage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/EditPastEvents' element={<ProtectedPath><AdminLayout><EditPastEventsPage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/AddEvent' element={<ProtectedPath><AdminLayout><AddEventPage /></AdminLayout></ProtectedPath>}/>
+        <Route path='/AddArticle' element={<ProtectedPath><AdminLayout><AddArticlePage /></AdminLayout></ProtectedPath>}/>
+      </Routes>
+    </AdminAuthContextProvider>  
   );
 }
 
