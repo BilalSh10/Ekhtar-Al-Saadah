@@ -5,10 +5,10 @@ import './Layout.css';
 
 function Layout(props) {
   return (
-    <div className="App">
-      <NavigationBar className="navbar" />
-      <main className="body">{props.children}</main>
-      <Footer className="sitefooter" />
+    <div className="layoutVisitor">
+      <NavigationBar className="navbarHome" />
+      <main className="theBodyOfHome">{props.children}</main>
+      <Footer className="sitefooterHome" />
       <BackToTopButton />
     </div>
   );

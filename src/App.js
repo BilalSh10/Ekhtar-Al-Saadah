@@ -9,6 +9,8 @@ import DonatePage from './pages/visitorPages/DonatePage';
 import ContactUsPage from './pages/visitorPages/ContactUsPage';
 import ReviewsPage from './pages/visitorPages/ReviewsPage';
 import SubmitReviewPage from './pages/visitorPages/SubmitReviewPage';
+import CancelBookingPage from './pages/visitorPages/CancelBookingPage';
+import BookTicketPage from './pages/visitorPages/BookTicketPage';
 import LoginPage from './pages/visitorPages/LoginPage';
 import AdminHomePage from './pages/adminPages/AdminHomePage';
 import EditInfoAboutAssociationPage from './pages/adminPages/EditInfoAboutAssociationPage';
@@ -18,7 +20,9 @@ import EditUpcomingEventsPage from './pages/adminPages/EditUpcomingEventsPage';
 import EditPastEventsPage from './pages/adminPages/EditPastEventsPage';
 import AddEventPage from './pages/adminPages/AddEventPage';
 import AddArticlePage from './pages/adminPages/AddArticlePage';
-
+import EventDetailsPage from './pages/EventDetailsPage';
+import ArticleDetailsPage from './pages/ArticleDetailsPage';
+import EvaluationFormPage from './pages/visitorPages/EvaluationFormPage';
 import ProtectedPath from "./ProtectedPath";
 import { AdminAuthContextProvider } from "./store/authContext/AuthContext";
 
@@ -33,11 +37,16 @@ function App() {
         <Route path='/About' element={<VisitorLayout><AboutPage /></VisitorLayout>}/>
         <Route path='/UpcomingEvents' element={<VisitorLayout><UpcomingEventsPage /></VisitorLayout>}/>
         <Route path='/PastEvents' element={<VisitorLayout><PastEventsPage /></VisitorLayout>}/>
+        <Route path='/Events/:id' element={<VisitorLayout><EventDetailsPage /></VisitorLayout>}/>
+        <Route path='/Articles/:id' element={<VisitorLayout><ArticleDetailsPage /></VisitorLayout>}/>
+        <Route path='/EvaluationForm/:id' element={<VisitorLayout><EvaluationFormPage /></VisitorLayout>}/>
         <Route path='/Blog' element={<VisitorLayout><BlogPage /></VisitorLayout>}/>
         <Route path='/Donate' element={<VisitorLayout><DonatePage /></VisitorLayout>}/>
         <Route path='/ContactUs' element={<VisitorLayout><ContactUsPage /></VisitorLayout>}/>
         <Route path='/Reviews' element={<VisitorLayout><ReviewsPage /></VisitorLayout>}/>
         <Route path='/SubmitReview' element={<VisitorLayout><SubmitReviewPage /></VisitorLayout>}/>
+        <Route path='/CancelTicket' element={<VisitorLayout><CancelBookingPage /></VisitorLayout>}/>
+        <Route path='/BookTicket/:id' element={<VisitorLayout><BookTicketPage /></VisitorLayout>}/>
         <Route path='/Login' element={<LoginPage />}/>
         <Route path='/AdminHome' element={<ProtectedPath><AdminLayout><AdminHomePage /></AdminLayout></ProtectedPath>}/>
         <Route path='/EditAssociationInfo' element={<ProtectedPath><AdminLayout><EditInfoAboutAssociationPage /></AdminLayout></ProtectedPath>}/>

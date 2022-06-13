@@ -1,0 +1,36 @@
+/* .FeaturedEventsDiv {
+    display: flex;
+    flex-direction: column;
+} */
+
+.FeaturedEventsCont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    /* background-color: aqua; */
+}
+
+/* .FeaturedEventsHeadline {
+    margin-bottom: -12px;
+    margin-top: 12px;
+    font-size: larger;
+}
+
+.FeaturedEventChild {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+} */
+
+@media screen and (max-width:1165px){
+    .FeaturedEventsCont{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .FeaturedEventsCont{
+        grid-template-columns: auto;
+    }
+}

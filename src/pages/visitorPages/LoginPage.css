@@ -3,11 +3,9 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(10, 14, 57); */
     background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
 }
 .LoginFormCont {
-    /* align-self: center; */
     position: relative;
     margin: auto;
     justify-content: center;
@@ -17,9 +15,7 @@
     top: calc(50vh - 150px);
     border: 2px solid #4c3975;
     border-radius: 6px;
-    /* background-color: #999898; */
     background: linear-gradient(to left bottom, #274547, #010b31, #111e1f);
-
     color: white;
 }
 
@@ -41,6 +37,12 @@
     height: 32px;
     width: 250px;
     border-radius: 6px;
+    margin-top: 8px;
+    display: block;
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0.25rem;  
 }
 
 .PassInput {
@@ -49,6 +51,12 @@
     height: 32px;
     width: 250px;
     border-radius: 6px;
+    margin-top: 8px;
+    display: block;
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0.25rem;  
 }
 
 .LoginButtonCont {
@@ -61,7 +69,6 @@
     left: calc(50% - 36px);
     width: 72px;
     height: 32px;
-    /* background-color: #d0cece; */
     background-color: #411b93;
     cursor: pointer;
     border-radius: 6px;

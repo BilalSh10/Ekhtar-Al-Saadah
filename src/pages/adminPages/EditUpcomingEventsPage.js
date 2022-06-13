@@ -1,7 +1,6 @@
 import {useReadFromDB} from '../../components/dbOperations/ReadFromDB';
 import EventsList from '../../components/eventsFiles/EventsList';
-import Loading from '../../components/Loading';
-
+import Loading from '../../components/Loading/Loading';
 function EditUpcomingEventsPage() {
   const arr = useReadFromDB("upcoming events");
   if(arr){  	

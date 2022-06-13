@@ -16,24 +16,23 @@ function Subsribe(){
     } else {
       setInvalidEmailMessage('This is an invalid email!');
     }
+    event.target.reset();
+    alert("You have successfully joined our mailing list!!.");
   }
 
 	return (
   	<div id = "subscribe-css">
       <h6 className="footerh6">SUBSCRIBE TO OUR MAILING list</h6>
-  	  <div className="subscribe-wrapper">
-        <div className="subscribe-form">
-          <form onSubmit = {submitHandler}>       
-  	        <div className='subscribe'>
+        <div className="subscribe-form0">
+          <form className='subscribeForm' onSubmit = {submitHandler}>       
+  	        <div>
               <input className="subscribe-css-email-field" type='text' required placeholder='enter your email' id='email' ref={emailInputRef}/>
-              <button className="subscribe-css-email-button">Submit</button>
             </div>
-            {/* <div className='subscribeBtn'>
+            <div>
  	            <button className="subscribe-css-email-button">Submit</button>
- 	          </div> */}
+ 	          </div>
   	      </form>
-        </div>
-      </div>    
+        </div>    
 
      <div>
        {invalidEmailMessage}

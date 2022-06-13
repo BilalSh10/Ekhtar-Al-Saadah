@@ -1,4 +1,134 @@
-.site-footer {
+.subscribe-form0{
+  display: flex;
+  flex-direction:row;
+  /* width: fit-content; */
+  /* background-color: aqua; */
+  /* text-align: center; */
+}
+
+.subscribe-css-email-field{
+  width: fit-content;
+  /* background-color:aqua ; */
+}
+
+.subscribe-css-email-button{
+  display: flex;
+  background: linear-gradient(to bottom, rgb(102, 16, 160), rgb(30, 9, 96));
+}
+
+.subscribe-css-email-button:hover{
+  background: linear-gradient(to bottom, rgb(60, 11, 93), rgb(60, 21, 188));
+}
+
+
+#subscribe-css {
+  flex-basis: 66%;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+/* .subscribe-wrapper {
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+  text-transform: none;
+  font-weight: 400;
+  width: 100%;
+}
+.subscribe-form {
+  clear: both;
+  overflow: hidden;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+form.subscribe-form {
+  clear: both;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  left: 0px;
+ } */
+.subscribe-css-email-field {
+  background: #333;
+  color: #ccc;
+  margin-top: 8px;
+  padding: 15px 20px;
+  flex-basis: 75%;
+  border: 0;
+} 
+/* @media screen and (min-width: 0px) and (max-width: 670px) {
+  .subscribe-css-email-button {
+    margin-left: 0px;
+  }
+} */
+
+.subscribe-css-email-button {
+  /* background: #ff675c; */
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 14px 30px;
+  margin-left: 8px;
+  margin-top: 8px;
+  text-transform: none;
+  font-size: 16px;
+  border: 0;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+/* .subscribe-css-email-button:hover {
+  background: #ea5a50;
+} */
+/* #subscribe-css p.subscribe-note {
+  margin: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 180%;
+  font-weight: 400;
+  line-height: normal;
+}
+#subscribe-css p.subscribe-note span {
+  position: relative;
+  overflow: hidden;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+#subscribe-css p.subscribe-note span.itatu {
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: lowercase;
+}
+#subscribe-css p.subscribe-note span.itatu:before,
+#subscribe-css p.subscribe-note span.itatu:after {
+  display: none;
+}
+#subscribe-css p.subscribe-note span:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  margin: 10px 0 0;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.5s;
+}
+#subscribe-css:hover p.subscribe-note span:before {
+  width: 100%;
+}  */
+
+
+.subscribeForm{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/* .site-footer {
   background-color: #111e1f;
   height: 300px;
   font-size: 18px;
@@ -305,11 +435,6 @@ form.subscribe-form {
   }
 }
 
-
-.subscribe{
-  display: flex;
-}
-
 .subscribe-css-email-button {
   background: #ff675c;
   color: #fff;
@@ -364,4 +489,4 @@ form.subscribe-form {
 }
 #subscribe-css:hover p.subscribe-note span:before {
   width: 100%;
-}
+} */

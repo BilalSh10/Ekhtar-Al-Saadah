@@ -1,0 +1,10 @@
+.filterHolder {
+
+}
+
+.filterForm {
+    display: flex;
+    flex-direction: row;
+    
+}
+

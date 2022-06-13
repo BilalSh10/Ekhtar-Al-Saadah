@@ -51,33 +51,34 @@ function AddEventPage() {
   return (
     <div className= {classes.card}>
       <form className={classes.form} onSubmit={submitHandler} >
-        <h3>You can add a new event here:</h3><p/><p/>
+        <h3 className={classes.AddEventHead}>You can add a new event here:</h3>
+        <br />
         <div className={classes.control}>
-          <label htmlFor= 'title'>Title</label>
-          <input required type='text' id='title' ref={titleRef}/><p/>
-          <label htmlFor= 'description'>Description</label>
-          <textarea required id='description' placeholder='event content here' rows='10' ref={descriptionRef}></textarea><p/>
-          <label htmlFor= 'alt'>alt(Image description)</label>
-          <input required type='text' id='alt' ref={altRef}/><p/>  
-          <label htmlFor= 'city'>city</label>
-          <input type='text' required id='city' ref={cityRef}/>
-          <label htmlFor= 'venue'>venue</label>
-          <input type='text' required id='venue' ref={venueRef}/>
-          <label htmlFor= 'type'>type</label>
-          <input type='text' required id='type' ref={typeRef}/>
-          <label htmlFor= 'category'>category</label>
-          <input type='text' required id='category' ref={categoryRef}/>
-          <label htmlFor= 'time'>time</label>
-          <input type='datetime-local' required id='time' ref={timeRef}/>
-          <div>
-            <label htmlFor= 'image'>image</label>
-            <input required type="file" id='image' onChange={(event) => {setImgToUpload(event.target.files[0]);}}/>
-            <button onClick={upload}> Upload Image </button>
+          <label className={classes.label} htmlFor= 'title'>Title</label>
+          <input className={classes.input} required type='text' id='title' ref={titleRef}/><p/>
+          <label className={classes.label} htmlFor= 'description'>Description</label>
+          <textarea className={classes.textarea} required id='description' placeholder='event content here' rows='6' ref={descriptionRef}></textarea><p/>
+          <label className={classes.label} htmlFor= 'alt'>alt(Image description)</label>
+          <input className={classes.input} required type='text' id='alt' ref={altRef}/><p/>  
+          <label className={classes.label} htmlFor= 'city'>city</label>
+          <input className={classes.input} type='text' required id='city' ref={cityRef}/>
+          <label className={classes.label} htmlFor= 'venue'>venue</label>
+          <input className={classes.input} type='text' required id='venue' ref={venueRef}/>
+          <label className={classes.label} htmlFor= 'type'>type</label>
+          <input className={classes.input} type='text' required id='type' ref={typeRef}/>
+          <label className={classes.label} htmlFor= 'category'>category</label>
+          <input className={classes.input} type='text' required id='category' ref={categoryRef}/>
+          <label className={classes.label} htmlFor= 'time'>time</label>
+          <input className={classes.input} type='datetime-local' required id='time' ref={timeRef}/>
+          <div className={classes.inputImageCont}>
+            <label className={classes.label} htmlFor= 'image'>image</label>
+            <input className={classes.input} required type="file" onChange={(event) => {setImgToUpload(event.target.files[0]);}}/>
+            <button className={classes.addimgbtn} onClick={upload}> Upload Image </button>
           </div>  
           <p/>
-        </div>
-        <div>
-        <button>Add event</button>
+        </div >
+        <div className={classes.container}>
+        <button className={classes.addeventbtn}>Add event</button>
         </div>
       </form> 
     </div>

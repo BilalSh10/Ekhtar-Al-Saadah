@@ -1,0 +1,133 @@
+.about-body {
+    padding-bottom: 36px;
+    
+}
+
+.assoname {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+p{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0px;
+}
+
+.anchor-links{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    align-self: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.anchors{
+    position: relative;
+    top: -100px;
+}
+
+#topOfPage{
+    position: relative;
+    top: -500px;
+}
+
+
+.anchor-links-btn{
+    height: 32px;
+    font-size: medium;
+    background-color: #111e1f;
+    color: #d0cece;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.anchor-links-btn:hover{
+    border: 2px solid #4c3975;
+    background: linear-gradient(to left bottom, #274547, #010b31, #111e1f);
+}
+
+.containerA {
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+    text-align: start;
+    width: 100%;
+}
+
+.general-info {
+    padding-bottom: 16px;
+}
+/* 
+img {
+    box-shadow: -0.25em 0.25rem 0.25em rgb(58, 58, 58);
+    margin-top: 6px;
+    border: solid 1px rgb(186, 16, 16);
+} */
+
+#activity1 {
+    width: 360px;
+    height: 360px;
+}
+#activity2 {
+    width: 360px;
+    height: 360px;
+}
+#activity3 {
+    width: 360px;
+    height: 360px;
+}
+
+.association-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 16px;
+}
+
+.title1 {
+    text-align: start;
+    padding-top: 16px;
+}
+
+.containerB {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 36px; */
+    padding-bottom: 36px;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+    /* align-items: center; */
+    text-align: start;
+    width: 100%;
+}
+
+.coo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#hisham1 {
+    width: 400px;
+    height: 360px;
+    
+}
+
+hr {
+    height:3px;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+}
+.hisham-info {
+    max-width: 720px;
+    margin-right: 12px;
+}

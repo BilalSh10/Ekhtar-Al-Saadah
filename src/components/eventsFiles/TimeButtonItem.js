@@ -1,16 +1,37 @@
+import { useNavigate } from "react-router-dom";
+
 function TimeButtonItem(props) {
   const currentTime = new Date();
   const eventTime = new Date(props.time);
-  if(eventTime > currentTime){
+  
+  const navigate = useNavigate();
+  const cancelTicket = () => {
+    navigate('/CancelTicket');
+  };
+
+  const bookTicket = () => {
+    // navigate('/BookTicket/'+props.registrationLink);
+    window.open(props.registrationLink,'_blank');
+  };
+
+  const evaluationForm = () => {
+
+    navigate('/EvaluationForm/'+props.id);
+
+  };
+
+
+  if((eventTime > currentTime)&&(props.edit==="no")){
     return (
-    <div>  
-      <button>Book a ticket</button>
+    <div className="bookCancelBtns">  
+      <button className="bookbtnEventsPage" onClick={bookTicket}> Book a ticket </button>
+      <button className="cancelbtnEventsPage" onClick={cancelTicket}>Cancel Registration</button>
     </div>  
     );
-  }else if(currentTime - eventTime < (1000 * 60 * 60 * 24 * 14)){ //If the event was at most two weeks ago fill the evaluation form
+  }else if((currentTime - eventTime < (1000 * 60 * 60 * 24 * 14))&&(props.edit==="no")){ //If the event was at most two weeks ago fill the evaluation form
     return (
     <div>  
-      <button>Fill Evaluation Form</button>
+      <button onClick={evaluationForm}>Fill Evaluation Form</button>
     </div>
     );
   }

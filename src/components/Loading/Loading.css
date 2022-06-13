@@ -1,9 +1,3 @@
-body
-{
-  margin:0;
-  padding:0;
-  background:#262626;
-}
 .ring
 {
   position:absolute;
@@ -39,7 +33,7 @@ body
   border-radius:50%;
   animation:animateC 2s linear infinite;
 }
-span
+.s
 {
   display:block;
   position:absolute;
@@ -51,7 +45,7 @@ span
   transform-origin:left;
   animation:animate 2s linear infinite;
 }
-span:before
+.s:before
 {
   content:'';
   position:absolute;

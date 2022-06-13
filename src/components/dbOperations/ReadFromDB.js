@@ -16,7 +16,7 @@ function useReadFromDB(props) {
     }catch(error){
       alert(error.message);
     }
-  }, [collectionRef]);
+  }, []);
 
   return array;
 }

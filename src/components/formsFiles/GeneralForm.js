@@ -25,34 +25,34 @@ function GeneralForm(props) {
     
   return (
     <div className="donate-form">
-      <h2 className="head">{props.title}</h2>
+      <h3 className="donate-head">{props.title}</h3>
       <form  onSubmit={submitHandler}>
  	      <div>
- 	        <label htmlFor= 'name'>Name</label>
- 	        <input type='text' required id='name' ref={nameInputRef}/>
+ 	        <label className="donate-label" htmlFor= 'name'>Name</label>
+ 	        <input className="donate-field" type='text' required id='name' ref={nameInputRef}/>
  	      </div>
         <br />
-        <br />
+        {/* <br /> */}
         <div>
-          <label htmlFor= 'email'>Email</label>
-          <input type='text' required id='email' ref={emailInputRef}/>
+          <label className="donate-label" htmlFor= 'email'>Email</label>
+          <input className="donate-field" type='text' required id='email' ref={emailInputRef}/>
         </div>
         <br />
-        <br />
+        {/* <br /> */}
         <div>
-          <label htmlFor= 'phone'>Phone number</label>
-          <input type='number'  id='phone' ref={phoneInputRef}/>
+          <label className="donate-label" htmlFor= 'phone'>Phone number</label>
+          <input className="donate-field" type='number'  id='phone' ref={phoneInputRef}/>
         </div>
         <br />
-        <br />
+        {/* <br /> */}
  	      <div>
- 	        <label htmlFor= 'description'>{props.description}</label>
- 	        <textarea id='description' required rows='5' columns='42' ref={descriptionInputRef}></textarea>
+ 	        <label className="donate-label" htmlFor= 'description'>{props.description}</label>
+ 	        <textarea className="donate-field" id='description' required rows='5' columns='42' ref={descriptionInputRef}></textarea>
  	      </div>
         <br />
-        <br />
- 	      <div>
- 	  	    <button className="btn">Send</button>
+        {/* <br /> */}
+ 	      <div className='donate-btn-holder'>
+ 	  	    <button className="donate-btn">Send</button>
  	      </div>
  	    </form>
     </div>  

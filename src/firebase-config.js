@@ -3,14 +3,14 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBEx3Z84OiJrzqsTIyKo2XCma5i_AWZaKc",
-  authDomain: "react-test-b798f.firebaseapp.com",
-  databaseURL: "https://react-test-b798f-default-rtdb.firebaseio.com",
-  projectId: "react-test-b798f",
-  storageBucket: "react-test-b798f.appspot.com",
-  messagingSenderId: "346586223164",
-  appId: "1:346586223164:web:bc1512d3ca2b9fbb1c6939"
+  apiKey: "AIzaSyBIUCYDn6q5EbhsgsOu1inucB4fEaXs63w",
+  authDomain: "teatro-3b394.firebaseapp.com",
+  projectId: "teatro-3b394",
+  storageBucket: "teatro-3b394.appspot.com",
+  messagingSenderId: "811218177788",
+  appId: "1:811218177788:web:eec314e1220dfff2005179"
 };
 
 // Initialize Firebase

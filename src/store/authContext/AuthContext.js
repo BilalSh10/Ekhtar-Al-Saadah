@@ -22,6 +22,11 @@ export function AdminAuthContextProvider({children}) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
       setAdminAuth(currentuser);
+    //  if(currentuser){
+    //    localStorage.setItem('currentuser', JSON.stringify(currentuser))
+    //  }else{
+    //    localStorage.removeItem('currentuser')
+    //  }
     });
 
     return () => {

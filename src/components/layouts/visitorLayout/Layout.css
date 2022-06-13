@@ -1,4 +1,8 @@
-.App {
+.AdminLayout {
+  background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
+}
+ 
+.layoutVisitor {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -7,23 +11,21 @@
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
-  /* background-color: #060a0a; */
-  background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
-
   color: #d0cece;
+  background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
 }
 
-.navbar {
+.navbarHome {
   height: 100px;
   margin-bottom: 1px;
   z-index: 1;
 }
 
-.body {
+.theBodyOfHome {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   position: relative;
   top: 100px;
   margin-top: 8px;
@@ -31,46 +33,25 @@
 
 }
 
-.sitefooter {
-  width: 100%;
+.logOutBtn {
   position: relative;
-  bottom: 0px;
+  bottom: 24px;
+
 }
-.App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  gap: 4px;
+
+.AdminNavBar {
+  margin-bottom: 24px;
+}
+
+.AdminBody {
+  margin-top: 101px;
+  min-height: calc(100vh - 125px);
+  height: fit-content;
+  padding-bottom: 24px;
+  color: white;
+  /* padding-top: 24px; */
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  font-size: 20px;
-  /* background-color: #060a0a; */
-  background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
-
-  color: #d0cece;
-}
-
-.navbar {
-  height: 100px;
-  margin-bottom: 1px;
-  z-index: 1;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 80%;
-  position: relative;
-  top: 100px;
-  margin-top: 8px;
-  margin-bottom: 48px;  
-
-}
-
-.sitefooter {
-  width: 100%;
-  position: relative;
-  bottom: 0px;
+  text-align: center;
+  /* padding-bottom: 24px; */
 }

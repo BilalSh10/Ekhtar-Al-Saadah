@@ -11,6 +11,7 @@ function EventsList(props) {
             key = {event.id}
             id = {event.id}
             title = {event.title}
+            priority = {event.priority}
             description = {event.description}
             time = {event.time}
             city = {event.city}

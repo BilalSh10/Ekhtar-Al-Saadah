@@ -4,7 +4,7 @@ function Loading() {
   return (
     <div>
       <div className="ring">Loading
-         <span></span>
+         <span className='s'></span>
       </div>
     </div>
   );

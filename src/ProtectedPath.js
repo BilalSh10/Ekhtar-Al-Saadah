@@ -5,7 +5,7 @@ import { useAdminAuthContext } from "./store/authContext/AuthContext";
 const ProtectedPath = ({children}) => {
   const { adminAuth } = useAdminAuthContext();
   if (!adminAuth) {
-    return <Navigate to = "/Login" />;
+    return <Navigate to = "/" />;
   }
   return children;
 };

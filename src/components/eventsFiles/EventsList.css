@@ -2,30 +2,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    justify-items: stretch;
-    width: 100%;
-    align-self: center;
-    margin-top: 8px;
-    margin-top: 8px;
-    margin-bottom: 12px;
-    align-items: center;
-    align-content: center;
 }
 
 .AllEventsHeadline {
-    padding-left: 24px;
     margin: 0px;
-    text-align: start;
+    text-align: center;
     width: 100%;
 }
 
 .AllEventsAsList {
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 12px;
     padding: 0px;

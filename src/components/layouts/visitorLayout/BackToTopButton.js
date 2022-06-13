@@ -37,6 +37,7 @@ function BackToTopButton() {
             borderRadius: "50%",
             alignItems: "center",
             zIndex: "1",
+            cursor: 'pointer',
         }}
         onClick={scrollUp}
         ><BiArrowToTop /></button>
