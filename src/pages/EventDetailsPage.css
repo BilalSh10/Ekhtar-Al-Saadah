@@ -1,0 +1,14 @@
+.SingleEventDetails {
+    text-align: start;
+    margin-top: 24px;
+}
+
+.EachDetailHeadline {
+    margin: 16px;
+    margin-left: 8px;
+}
+
+#SingleEventImg {
+    height: 50vh;
+    width: 50vh;
+}

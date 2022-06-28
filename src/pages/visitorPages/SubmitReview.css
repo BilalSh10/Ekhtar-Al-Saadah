@@ -1,0 +1,48 @@
+.SubmitReviewPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.SubmitReviewPageHeader {
+    margin-bottom: 48px;
+}
+
+.SubmitReviewForm {
+    border: 2px solid rgb(32, 3, 82);
+    border-radius: 8px;
+    background: linear-gradient(to left bottom, #274547, #010b31, #111e1f);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.SubmitReviewLabel {
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.SubmitReviewInput {
+    line-height: 32px;
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.SubmitReviewBtnHolder {
+    /* width: 80px;
+    border: ; */
+}
+
+.SubmitReviewBtn {
+    width: 100px;
+    font-weight: bold;
+    height: 36px;
+    border-radius: 6px;
+    margin-top: 12px;
+    background-color: rgb(113, 13, 113);
+    color: white;
+    cursor: pointer;
+}
