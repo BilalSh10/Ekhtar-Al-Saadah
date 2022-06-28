@@ -47,12 +47,13 @@ function AddEventPage() {
     let cityVenue = enteredEvent.venue + " - " + enteredEvent.city;
     let msg = {list: mailList, time:enteredEvent.time.replace("T", " "), regLink:enteredEvent.registrationLink,
               title:enteredEvent.title, description:enteredEvent.description, location:cityVenue};
-    emailjs.send('service_0jjhack', 'template_4bakion', msg, '9JC3MmJ8gBtEUXEG2')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    //put the secret keys in the send function
+    //emailjs.send('', '', msg, '')
+    //  .then((result) => {
+    //      console.log(result.text);
+    //  }, (error) => {
+    //      console.log(error.text);
+    //  });
     // console.log(mailList); 
   }  
 
