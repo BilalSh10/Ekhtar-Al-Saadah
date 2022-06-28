@@ -7,14 +7,15 @@ function GeneralForm(props) {
 
   function submitHandler(event){
     event.preventDefault();
-    emailjs.sendForm('service_0jjhack', 'template_svfyjbt', form.current, '9JC3MmJ8gBtEUXEG2')
-     .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-    event.target.reset();
-    alert("your mesage was successfully sent, we will get back to you as soon as possible.");
+   //put secret parameters of send function here
+    // emailjs.sendForm('', '', form.current, '')
+   //  .then((result) => {
+   //       console.log(result.text);
+   //   }, (error) => {
+   //       console.log(error.text);
+   //   });
+    //event.target.reset();
+    //alert("your mesage was successfully sent, we will get back to you as soon as possible.");
   }  
     
   return (
