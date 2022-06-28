@@ -1,0 +1,36 @@
+.item {
+  margin: 1rem 0;
+}
+
+.content {
+  background: linear-gradient(to right bottom, #274547, #010b31, #111e1f);
+  border: 2px solid rgb(32, 3, 82);
+  text-align: left;
+  color: white;
+  display: block;
+  font: inherit;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0.25em 0.25em 0.25em;
+}
+
+.nameHead {
+
+}
+
+.scoreHead {
+
+}
+
+.DescriptionPara {
+
+}
+
+.btnholder {
+
+}

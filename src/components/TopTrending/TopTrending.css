@@ -1,0 +1,118 @@
+.below-nav {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 16px;
+    border: 0px solid white;
+    border-radius: 16px;
+}
+
+.biala0 {
+    position: relative;
+    width: 49%;
+    min-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.TopTrendingImg {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    margin-top: 0px;
+    border: solid #4c3975 1px;
+    border-bottom: 0;
+    box-shadow: -0.25em 0.25rem 0.25em #411b93;
+    display: block;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    /* margin-left: 5px; */
+}
+
+.image__img:hover {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.image__overlay {
+    position: absolute;
+    /* bottom: 16px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 12px;
+    border: solid #ad1e1e 1px;
+    transition: opacity 0.25s;
+    box-shadow: -0.25em 0.25rem 0.25em #ad1e1e;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(3px);
+}
+
+.image__overlay--primary {
+    background: transparent;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 3.25em;
+    background-image: linear-gradient(to right, #f221217e, #8e0058d6, #f2212182);
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    width: 100%;
+    background-image: linear-gradient(to right, #2139f27e, #8e0058d5, #2139f27a);
+}
+
+@media screen and (max-width: 850px) {
+    .below-nav{
+        display: flex;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .below-nav{
+        display: flex;
+        gap: 12px;
+    }
+}

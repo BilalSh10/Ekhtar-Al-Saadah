@@ -1,0 +1,61 @@
+.form {
+    position: relative;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 80%;
+    height: fit-content;
+    padding: 0px;
+    border: 2px solid #4c3975;
+    border-radius: 6px;
+    background: linear-gradient(to left bottom, #274547, #010b31, #111e1f);
+    color: white;
+}
+
+.head {
+    text-align: start;
+    width: 100%;
+    margin-top: 12px;
+    margin-left: 16px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.label {
+    color: white;
+    margin-left: 5%;
+}
+
+.field {
+    line-height: 24px;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 12px;
+    display: block;
+    font: inherit;
+    border-radius: 4px;
+    padding: 0.25rem;  
+}
+
+.btnHolder {
+    text-align: center;
+}
+
+.btn{
+    padding: 8px;
+    width: 120px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #411b93;
+    color:white;
+    position: relative;
+    align-self: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: black solid 1px;
+}

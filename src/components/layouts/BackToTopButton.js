@@ -1,0 +1,43 @@
+import React from 'react';
+import { useEffect, useState } from 'react';
+import { BiArrowToTop } from "react-icons/bi";
+
+function BackToTopButton() {
+    const [backToTopButton, setBackToTopButton] = useState(false);
+    const scrollUp = () => { window.scrollTo({ top: 0, behavior: "smooth"})}
+
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        if(window.scrollY > 200) {
+          setBackToTopButton(true)
+        }else{
+          setBackToTopButton(false)
+        }
+      })
+    }, [])
+
+  return(
+    <div> {backToTopButton && (
+        <button style={{
+            position: "fixed",
+            display: "flex",
+            bottom: "70px",
+            right: "75px",
+            height: "45px",
+            width: "45px",
+            fontSize: "45px",
+            justifyContent: "center",
+            borderRadius: "50%",
+            alignItems: "center",
+            zIndex: "1",
+            cursor: 'pointer',
+          }}
+          onClick={scrollUp}>
+          <BiArrowToTop />
+        </button>
+    )} 
+    </div>
+  );
+}
+
+export default BackToTopButton;

@@ -1,0 +1,17 @@
+.FeaturedEventsCont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:1165px){
+    .FeaturedEventsCont{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .FeaturedEventsCont{
+        grid-template-columns: auto;
+    }
+}

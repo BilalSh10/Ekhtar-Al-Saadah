@@ -1,0 +1,18 @@
+.AllBlogsList{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 1165px){
+    .AllBlogsList{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .AllBlogsList{
+        grid-template-columns: auto;
+    }
+}

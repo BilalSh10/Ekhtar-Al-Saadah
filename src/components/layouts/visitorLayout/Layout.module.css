@@ -1,0 +1,29 @@
+.layoutVisitor {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  color: #d0cece;
+  background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
+}
+
+.navbarHome {
+  height: 100px;
+  margin-bottom: 1px;
+  z-index: 1;
+}
+
+.theBodyOfHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+  position: relative;
+  top: 100px;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}

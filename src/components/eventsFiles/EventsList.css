@@ -1,0 +1,57 @@
+.AllEventsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.AllEventsHeadline {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.AllEventsAsList {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    padding: 0px;
+}
+
+.OneEvent {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-items: stretch;
+    margin: auto;
+    padding: 24px;
+    justify-content: stretch;
+}
+
+.filter {
+    text-align: start;
+    align-self: flex-start;
+    position: relative;
+    display: inline-block;
+    justify-content: start;
+    justify-items: start;
+    line-height: 12px;
+}
+
+.filter-cat {
+    height: 16px;
+    line-height: 16px;
+    align-self: flex-end;
+    align-items: flex-start;
+    justify-content: start;
+    justify-items: start;
+    align-content: flex-start;
+}
+
+#cat {
+    font-size: 16px;
+    line-height: 16px;
+}

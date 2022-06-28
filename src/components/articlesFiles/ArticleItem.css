@@ -1,0 +1,88 @@
+.bookCancelBtns{
+    display: flex;
+    gap: 4px;
+    margin-left: 18px;
+    margin-bottom: 22px;  
+}
+
+.bookbtnEventsPage{
+    background-color: #3e0084;
+    cursor: pointer;
+    padding: 12px 25px; 
+    color: white;
+    border: 1px solid #512880;
+    border-radius: 4px;
+   
+}
+
+.bookbtnEventsPage:hover{
+    background-color: #6313bf;
+    cursor: pointer;
+    padding: 12px 25px; 
+    color: white;
+    border: 1px solid #512880;
+    border-radius: 4px;
+    transition: all 1s;
+}
+
+.cancelbtnEventsPage{
+    background-color: #cd0000;
+    cursor: pointer;
+    padding: 12px 10px; 
+    color: white;
+    margin-right: 16px;
+    border: 1px solid rgb(192, 37, 37);
+    border-radius: 4px;
+    transition: all 1s;
+}
+
+.cancelbtnEventsPage:hover{
+    background-color: #e40101;
+    cursor: pointer;
+    padding: 12px 10px; 
+    color: white;
+    margin-right: 16px;
+    border: 1px solid rgb(192, 37, 37);
+    border-radius: 4px;
+}
+
+.EventCompCont0 {
+    margin: 8px;
+    border: 3px solid rgb(82, 3, 109);
+    border-radius: 20px;
+    color: #d0cece;
+    padding: 20px 20px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    background: linear-gradient(to left bottom, #264d6dce, #010b31, #111e1f);
+}
+
+.EventCompCont0:hover{
+    box-shadow: -0.25em 0.25rem 0.25em rgb(82, 3, 109);
+}
+
+.BlogCompHeadline{
+    text-decoration: underline;
+}
+
+.ArticlePageLinkBlock{
+    list-style-type: none;
+}
+
+.EventCompSummaryDiv {
+    flex-basis: 66%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 256px;
+}
+
+#eventImg {
+    width: 280px;
+    height: 260px;
+    border-radius: 20px;
+}

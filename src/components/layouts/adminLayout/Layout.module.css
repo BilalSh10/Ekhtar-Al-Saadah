@@ -1,0 +1,23 @@
+.AdminLayout {
+  background: linear-gradient(to bottom, #111e1f, #010b31, #111e1f);
+}
+
+.AdminNavBar {
+  margin-bottom: 24px;
+}
+
+.AdminBody {
+  margin-top: 101px;
+  min-height: calc(100vh - 125px);
+  height: fit-content;
+  padding-bottom: 24px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logOutBtn {
+  position: relative;
+  bottom: 24px;
+}
